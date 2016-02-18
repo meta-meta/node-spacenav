@@ -1,0 +1,31 @@
+{
+  "name": "node-spacenav",
+  "version": "1.0.0",
+  "description": "A Node.js driver for 3dconnecion SpaceNavigator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meta-meta/node-spacenav.git"
+  },
+  "keywords": [
+    "3dconnexion",
+    "spacemouse",
+    "space",
+    "mouse",
+    "3d",
+    "mouse",
+    "node-hid"
+  ],
+  "author": "Paul M. Christian",
+  "license": "(MIT OR X11)",
+  "bugs": {
+    "url": "https://github.com/meta-meta/node-spacenav/issues"
+  },
+  "homepage": "https://github.com/meta-meta/node-spacenav#readme",
+  "dependencies": {
+    "node-hid": "^0.5.1"
+  }
+}
