@@ -1,7 +1,7 @@
 {
   "name": "node-spacenav",
   "version": "1.0.0",
-  "description": "A Node.js driver for 3dconnecion SpaceNavigator",
+  "description": "A Node.js driver for 3dconnexion SpaceNavigator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
