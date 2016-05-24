@@ -1,17 +1,13 @@
 var SpaceNavigator = require('.');
 
-var spacenav;
-for (var i = 0; i < SpaceNavigator.deviceCount(); i++) {
+console.log('found ', SpaceNavigator.deviceCount(), ' spacenavs');
 
-    console.log('opening SpaceNavigator', i);
+var spacenav = new SpaceNavigator.SpaceNavigator();
 
-    spacenav = new SpaceNavigator.SpaceNavigator(i);
+spacenav.on('translate', function (translation) {
+    console.log('translate: ', JSON.stringify(translation));
+});
 
-    spacenav.on('translate', function (translation) {
-        console.log('translate: ', JSON.stringify(translation));
-    });
-
-    spacenav.on('rotate', function (rotation) {
-        console.log('rotate: ', JSON.stringify(rotation));
-    });
-}
+spacenav.on('rotate', function (rotation) {
+    console.log('rotate: ', JSON.stringify(rotation));
+});

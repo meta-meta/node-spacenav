@@ -36,7 +36,7 @@ SpaceNavigator.prototype.interpretData = function(data) {
     function parseData(xl, xh, zl, zh, yl, yh)
     {
         function adjust(x) { // we get an improperly parsed two's complement int
-            return x > 1000 ? 65536 - x : -x;
+            return (x > 1000 ? 65536 - x : -x) / 350;
         }
 
         return {
